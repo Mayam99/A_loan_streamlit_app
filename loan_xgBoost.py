@@ -2,12 +2,15 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+except ImportError:
+from sklearn.externals import joblib 
 import joblib
 import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.preprocessing import StandardScaler, LabelEncoder
 from sklearn.metrics import classification_report, roc_auc_score, roc_curve
 from xgboost import XGBClassifier
+
 
 # Set page config
 st.set_page_config(page_title="Loan Default Predictor", layout="wide")
