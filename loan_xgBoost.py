@@ -2,8 +2,10 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+try:
+    import joblib
 except ImportError:
-    from sklearn.externals import joblib 
+    from sklearn.externals import joblib  # Older scikit-learn versions
 import joblib
 import matplotlib.pyplot as plt
 import seaborn as sns
