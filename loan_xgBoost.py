@@ -19,7 +19,7 @@ st.set_page_config(page_title="Loan Default Predictor", layout="wide")
 # Load the pre-trained model
 @st.cache_resource
 def load_model():
-    return joblib.load('models/xgb_loan_default_model.pkl')
+    return joblib.load('xgb_loan_default_model.pkl')
 
 @st.cache_data
 def load_data():
