@@ -24,7 +24,7 @@ def load_model():
 @st.cache_data
 def load_data():
     # This is just for demo - in practice you might not load the full dataset
-    return pd.read_csv('application_train.csv')
+    #return pd.read_csv('application_train.csv')
 
 # Preprocessing function
 def preprocess_data(df):
